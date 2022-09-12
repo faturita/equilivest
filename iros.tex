@@ -204,10 +204,7 @@ Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the cl
 
 
 \subsection{Robotic Device Vest}
-Description of the system.
-How does it work, how is the detection of IMU working
-Internet of Robotic Things.
-Arduino
+The whole vest system is made of, in a high level description, a battery shield, an esp8266 based arduino shield, an inertial measurement unit (MPU 6050) and a vibration motor to stimulate the patient. MPU 6050 uses the accelerometer and gyroscope data to get angular acceleration and measure pitch roll and yaw angles. Said angles are measured by calculation with the corresponding equations and processed with a complementary filter which relies 80\% in gyroscope data and 20\% in accelerometer data. This values will be sent in real time as packets to a UDP server and later visualized and exported by the server host for further processing. The whole system can be powered by power banks or a 18650 battery array.
 
 \textbf{Why only vibrotactile stimulation and not auditory stimulation}
 
