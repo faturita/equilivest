@@ -67,9 +67,9 @@ Franco Paviotti$^{1}$, Esteban Buniak$^{2}$, Rodrigo Ramele$^{3}$, Orestes Freix
 
 \maketitle
 
-\begin{abstract}
-Stroke is a medical condition that can affect motor function, particularly dynamic balance.  Biofeedback can aid in rehabilitaiton procedures which help patients to regain lost motor activity and recover functionality.  In this work, we are presenting a smart-vest device that assist in rehabilitation procedures by providing feedback in the form of vibrotactile stimulation. Information provided by principal caregivers, family, patient in the form of surveys and interview, is used to derive potential clinical causal hypothesis and these are used to drive the experimentation paradigm, and the robotic smart-vest to aid in the whole procedure...
-\end{abstract}
+%\begin{abstract}
+%Stroke is a medical condition that can affect motor function, particularly dynamic balance.  Biofeedback can aid in rehabilitaiton procedures which help patients to regain lost motor activity and recover functionality.  In this work, we are presenting a smart-vest device that assist in rehabilitation procedures by providing feedback in the form of vibrotactile stimulation. Information provided by principal caregivers, family, patient in the form of surveys and interview, is used to derive potential clinical causal hypothesis and these are used to drive the experimentation paradigm, and the robotic smart-vest to aid in the whole procedure...
+%\end{abstract}
 
 \begin{IEEEkeywords}
 Stroke, Balance, Rehabilitation, Biofeedback, Vibrotactile
@@ -81,7 +81,9 @@ Brain stroke is a devastating medical condition, that affects world population a
 
 % As early as possible the rehabilitation can be put into place, better the outcome that can be obtained by the treatment. 
 
-Strong evidence suggests that neuroplasticity can be enhanced by neural rehabilitation~\cite{DeAngelis.etal2021,Albert.etal2012}.  These procedures are aimed to relearn movements that can trigger new neural pathway generation which reroute, or even completely replace, those pathways that were damaged by the stroke.  Neurorehabilitation procedures are performed by a group of interdisciplinary caregivers and technicians.  Recently, biofeedback techniques, aiming at providing extra information to the patient that can be used to aid in the relearning have appeared as an alternative treatment to increase neuralplasticity. These are in the form of Wearable devices-based biofeedback rehabilitation (WDBR)~\cite{Peake.etal2018} or robotic rehabilitation gait devices~\cite{Zhao.etal2022,Peshkin.etal2005,Tong.etal2006}.  
+Strong evidence suggests that neuroplasticity can be enhanced by neural rehabilitation~\cite{DeAngelis.etal2021,Albert.etal2012}.  These procedures are aimed to relearn movements that can trigger new neural pathway generation which reroute, or even completely replace, those pathways that were damaged by the stroke.   Recently, biofeedback techniques, aiming at providing extra information to the patient that can be used to aid in the relearning have appeared as a complementary treatment to increase neuralplasticity. These are in the form of Wearable devices-based biofeedback rehabilitation (WDBR)~\cite{Peake.etal2018} or robotic rehabilitation gait devices~\cite{Zhao.etal2022,Peshkin.etal2005,Tong.etal2006}.  
+
+%Neurorehabilitation procedures are performed by a group of interdisciplinary caregivers and technicians. 
 
 %This published evidence emphasizes that this biofeedback can indeed enhance the results of rehabilitation procedures.
 
@@ -93,7 +95,7 @@ This work presents the development of a device which is grounded on this idea, a
 
 %The form of validation procedures that is required in clinical settings\cite{Papastylianou.etal2016}.
 
-Section \ref{sec:case-study} presents the case study.  Next section \ref{sec:hypothesis} summarize the results of the interviews and surveys performed by the patient, their family and professional caregivers, presenting the underlying clinical causal hypothesis.  Section \ref{sec:vest} describes the vest details and architecture.  The experimental design protocol is expounded in Section \ref{sec:experimental}.  Preliminary results are presented on the next section, and this work concludes with discussion and conclusion.
+%Section \ref{sec:case-study} presents the case study.  Next section \ref{sec:hypothesis} summarize the results of the interviews and surveys performed by the patient, their family and professional caregivers, presenting the underlying clinical causal hypothesis.  Section \ref{sec:vest} describes the vest details and architecture.  The experimental design protocol is expounded in Section \ref{sec:experimental}.  Preliminary results are presented on the next section, and this work concludes with discussion and conclusion.
 
 \section{Materials and Methods}
 
@@ -223,22 +225,16 @@ When do you use the cane ?  & Only when I am out of home.\\
 \begin{center}
 \begin{tabular}[!t]{|p{0.45\linewidth} |p{0.45\linewidth} |}
 \hline
-\textbf{Question} & \textbf{Answer} \\
+\textbf{Question} &  \textbf{Answer} \\
 \hline
 \hline
-Describe the situation when the patient loss her balance & Loss of balance is manifested at the beginning, during the gait cycle or with sudden stops. Walking is performed using intense visual compensation.   When the patient is distracted, or when she stops looking at the floor, or looks sideways, instability increases.  Gait  is not automated, and demands cognitive resources. \\
+Describe the situation when the patient loss her balance & Loss of balance is manifested at the beginning, during the gait cycle or with sudden stops. Walking is performed using intense visual compensation.   Instability increase when the patient is distracted, when she stops looking at the floor, or when she looks sideways.  Her gait is not automated, and demands cognitive resources. \\
 \hline
-Is there any significant muscle loss in lower-limbs ? & No \\
+Is there any significant muscle loss in lower-limbs ? & No\\
 \hline
-Does she presents dysmetria ? & No \\
-\hline
-Does she presents heavy shaking ? & No \\
+Does she presents any of the following dysmetria / heavy shaking / somatosensorial alterations / proprioceptive alterations ? & No \\
 \hline
 Does she have any visible reaction before falling?  & She presents dynamic alterations in hip and ankle compensation.\\
-\hline
-Does she have any somatosensorial alteration?  &  No \\
-\hline
-Does she have any proprioceptive alteration?  &  No \\
 \hline
 Is the patient gait normal ?  &  No, the patient presents ataxic gait, likely triggered by slow reaction to perform lower-limb balance correction. \\
 \hline
@@ -270,9 +266,17 @@ Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the cl
 \subsection{Robotic Device Vest}
 \label{sec:vest}
 
-The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU uses the accelerometer and gyroscope data to get 3-dimensional angular acceleration and measure pitch roll and yaw angles. These angles are calculated from a set of transforming equations and processed with a complementary filter which relies 80\% in gyroscope data and 20\% in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 1000 Hz. 
+The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU uses the accelerometer and gyroscope data to get 3-dimensional angular acceleration and measure pitch roll and yaw angles. These angles are calculated from a set of transforming equations and processed with a complementary filter which relies 80\% in gyroscope data and 20\% in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 1000 Hz. The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest}.  It is based on a safety vest, complemented with velcro pockets. 
 
-The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest} ......
+\begin{figure}[h!]
+\centering
+\includegraphics[width=8cm]{equilivest.jpg}
+\caption{Front view and back view of the Equilivest prototype.  The vest is based on a safety vest, with additional velcro pockets.  The battery is located on the back, while the vibrotactile motor is located in the belly~\cite{Brandebusemeyer.etal2021}.  The IMU sensor is pressed against the chest by the use of a flexible elastic band. }
+\label{fig:smart-vest}
+\end{figure}
+
+
+
 
 %\textbf{Why only vibrotactile stimulation and not auditory stimulation}
 
@@ -311,6 +315,21 @@ This experiment involves the coupling of the other two.  Five participants are i
 \section*{Results}
 
 Preliminary results show that ........
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=8cm]{gait.png}
+\caption{fdsfsdfdsfdsf }
+\label{fig:smart-vest}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=8cm]{gait.png}
+\caption{dfsfsdfs }
+\label{fig:smart-vest}
+\end{figure}
 
 %(1) Se muestran entonces esos dos gráficos promediados de cada uno de los 5 sujetos (10 series, 5 sin el motor, 5 con el motor).
 %
