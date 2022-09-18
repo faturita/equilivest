@@ -77,11 +77,11 @@ Stroke, Balance, Rehabilitation, Biofeedback, Vibrotactile
 
 \section{Introduction}
 
-Brain stroke is a devastating medical condition, that affects world population and is the main cause of disabilities worldwide~\cite{Caplan.etal2023}.  Disabilities related to stroke can affect motor pathways, and may lead to several motor function disorders.   One important aspect of motor function is balance which is the ability to control the center of mass of the body inside the base support provided by the lower limb~\cite{Bowman2021}.  Stroke can affect dynamic balance as well,  which is manifested while walking, impairing autonomy and independence, important factors in Activities of Daily Living (ADL) particularly for young patients~\cite{Afrasiabifar.etal2020,Donato.etal2016}.
+Brain stroke is a devastating medical condition, that affects world population and is the main cause of disabilities worldwide~\cite{Caplan.etal2023}.  Disabilities related to stroke can affect motor pathways, and may lead to several motor function disorders.   One important aspect of motor function is balance which is the ability to control the body's center of mass inside the base support provided by the lower limb~\cite{Bowman2021}.  Stroke can affect dynamic balance as well,  which is manifested while walking, impairing autonomy and independence, important factors in Activities of Daily Living (ADL) particularly for young patients~\cite{Afrasiabifar.etal2020,Donato.etal2016}.
 
 % As early as possible the rehabilitation can be put into place, better the outcome that can be obtained by the treatment. 
 
-Strong evidence suggests that neuroplasticity can be enhanced by neural rehabilitation~\cite{DeAngelis.etal2021,Albert.etal2012}.  These procedures are aimed to relearn movements that can trigger new neural pathway generation which reroute, or even completely replace, those pathways that were damaged by the stroke.   Recently, biofeedback techniques, aiming at providing extra information to the patient that can be used to aid in the relearning have appeared as a complementary treatment to increase neuralplasticity. These are in the form of Wearable devices-based biofeedback rehabilitation (WDBR)~\cite{Peake.etal2018} or robotic rehabilitation gait devices~\cite{Zhao.etal2022,Peshkin.etal2005,Tong.etal2006}.  
+Strong evidence suggests that neuroplasticity can be enhanced by neural rehabilitation~\cite{DeAngelis.etal2021,Albert.etal2012}.  These procedures are aimed to relearn movements that can trigger new neural pathway generation which reroute, or even completely replace, those pathways that were damaged by the stroke.   Recently, biofeedback techniques aiming to provide extra information to the patient to aid in the relearning, have appeared as a complementary treatment to increase neuralplasticity. These are in the form of Wearable devices-based biofeedback rehabilitation (WDBR)~\cite{Peake.etal2018} or robotic rehabilitation gait devices~\cite{Zhao.etal2022,Peshkin.etal2005,Tong.etal2006}.  
 
 %Neurorehabilitation procedures are performed by a group of interdisciplinary caregivers and technicians. 
 
@@ -215,8 +215,8 @@ What do you feel before you fall ? & Sometimes I do feel something before.  I re
 When do you use the cane ?  & Only when I am out of home.\\
 \hline
 \end{tabular}
-\vspace{10pt}
-\caption{Survey and responses provided by the patient.}
+\vspace{2pt}
+\caption{Survey and responses provided by the patient and family.}
 \label{tab:patientsurvey}
 \end{center}
 \end{table*}
@@ -243,14 +243,14 @@ Is there any behavioural pattern linked to falling events ? &  Yes, cognitive wo
 Describe current treatment. & The patient is currently working on rehabilitation exercises to retrain her Vestibulo-Ocular Reflex (VOR), to improve her static and dynamic balance, and improve her locomotor automatism.  She is improving on a montly basis, but still she has not reached the level to walk autonomy without any aid. \\
 \hline
 \end{tabular}
-\vspace{10pt}
-\caption{Survey and responses provided by his main professional rehabilitation caregiver.}
+\vspace{2pt}
+\caption{Survey and responses provided by his main patient's rehabilitation caregiver.}
 \label{tab:caregiverssurvey}
 \end{center}
 \end{table*}
 
 We perform a series of surveys and interviews with the patient and their caregivers.  Main results are summarized in 
-Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the clinical history, the results from the surveys and interviews, we postulate three different potential clinical situations that could use the external signal in the form of biofeedback and could potentially aid in rehabilitation procedures.  The first (i) is a potential problem in the integration of vestibular information while walking, the second (ii) is bradykinesia where the required processing speed to effectively adjust the lower limb to keep the center of mass inside the base support is not achieved.  Finally, the third (iii) hypothesis is an ataxic gait, where non-automated gait produces an increase in the likelihood of failing.
+Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the clinical history, results from surveys and interviews, we postulate three different potential clinical situations that could use the external biofeedback signal and could potentially aid in rehabilitation procedures.  The first (i) is a potential problem in the integration of vestibular information while walking, the second (ii) is bradykinesia where the required processing speed to effectively adjust the lower limb to keep the center of mass inside the base support is not achieved.  Finally, the third (iii) hypothesis is an ataxic gait, where non-automated gait produces an increase in the likelihood of failing.
 
 %Bradykinesia: due to the slow speech.
 %Unusual gait
@@ -266,12 +266,12 @@ Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the cl
 \subsection{Robotic Device Vest}
 \label{sec:vest}
 
-The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU uses the accelerometer and gyroscope data to get 3-dimensional angular acceleration and measure pitch roll and yaw angles. These angles are calculated from a set of transforming equations and processed with a complementary filter which relies 80\% in gyroscope data and 20\% in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 1000 Hz. The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest}.  It is based on a safety vest, complemented with velcro pockets. 
+The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU provides accelerometer and gyroscope data to get a 3-dimensional angular acceleration vector and a linear acceleration vector. Pitch, Roll and Yaw angles are calculated from a set of transforming equations and processed with a complementary filter which relies 80\% in gyroscope data and 20\% in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 1000 Hz. The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest}.  It is based on a safety vest, complemented with velcro pockets. 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{equilivest.jpg}
-\caption{Front view and back view of the Equilivest prototype.  The vest is based on a safety vest, with additional velcro pockets.  The battery is located on the back, while the vibrotactile motor is located in the belly~\cite{Brandebusemeyer.etal2021}.  The IMU sensor is pressed against the chest by the use of a flexible elastic band. }
+\caption{Front and back view of the Equilivest prototype.  The vest is based on a safety vest, with additional velcro pockets.  The battery is located on the back, while the vibrotactile motor is located on the belly~\cite{Brandebusemeyer.etal2021}.  The IMU sensor is pressed against the chest by the use of a flexible elastic band. }
 \label{fig:smart-vest}
 \end{figure}
 
@@ -312,23 +312,23 @@ This experiment involves the coupling of the other two.  Five participants are i
 %(4) En este caso, lo que hacemos es armar un gráfico de gait y lo que hace el dispositivo es detectar un punto en el ciclo y vibrar de forma recurrente, como un marca paso, basado en un podómetro.  En este caso, tomás 5 personas las hacés caminar, determinás cómo son esas curvas y accionás el motor siempre en el mismo momento.  Lo que mostramos son los gráficos y el momento donde se dispara la estimulación.
 
 
-\section*{Results}
+\section*{Results and Discussion}
 
-Preliminary results show that ........
+Preliminary results show that for the (1) experiment, the pitch,roll, yaw angles can be used to determine a breakpoint where the fall is inevitable (black vertical line, marked as 1).   Results from experiment number (2), show that the gait cycle are clearly visible from the raw and pitch data.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=8cm]{gait.png}
-\caption{fdsfsdfdsfdsf }
-\label{fig:smart-vest}
+\includegraphics[width=8cm]{vestibular.png}
+\caption{Pitch value in degrees showing the progressive increase as participants leaned forward crossing the instability condition (1).  Time is in milliseconds. }
+\label{fig:vestibular}
 \end{figure}
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{gait.png}
-\caption{dfsfsdfs }
-\label{fig:smart-vest}
+\caption{Angular acceleration for the X and Y axis showing 7 steps of the 10MWT assessment.   }
+\label{fig:gait}
 \end{figure}
 
 %(1) Se muestran entonces esos dos gráficos promediados de cada uno de los 5 sujetos (10 series, 5 sin el motor, 5 con el motor).
@@ -338,7 +338,6 @@ Preliminary results show that ........
 %
 %(3) Este caso probablemente sea el que requiera más experimentación sobre Paula en sí misma.  La idea acá es tener los gráficos promediados de GAIT, que son todos cíclicos, de dos de las variables cualquiera del IMU que formen un ciclo, y ver que hay un patrón común que se da más o menos para las personas healthy.  En base a eso, luego la idea es probar si con Paula ese patrón CAMBIA.  A partir de que vemos si cambia hay que ver donde cambia y en ese punto meter el pacemaker.
 
-\section*{Discussion}
 
 The information provided from all the experiments allow us to implement three different VF strategies:  The first is an \textbf{Artificial Vestibular Feedback}, which provides information as a feedback for vestibular information integration process.  This is implemented as a frequency-increasing VF signal that represents a distance from the breaking condition position where the fall is inevitable.   The purpose is to provide the patient with a continuous sensation that modulates the risk of falling.
 
