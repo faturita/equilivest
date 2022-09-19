@@ -30,7 +30,7 @@ Franco Paviotti$^{1}$, Esteban Buniak$^{2}$, Rodrigo Ramele$^{3}$, Orestes Freix
         {\tt\small orestesfreixes@gmail.com}}%
 \thanks{$^{5}$J.M. Santos is with the UNAHUR Universidad Nacional de Hurlingham,
                     Buenos Aires, Argentina
-        {\tt\small juanmiguelsantos@gmail.com}}%
+        {\tt\small juan.santos@unahur.edu.ar}}%
 %\thanks{*This work was not supported by any organization}% <-this % stops a space}
 }
 
@@ -102,9 +102,9 @@ This work presents the development of a device which is grounded on this idea, a
 \subsection{Patient Case Study}
 \label{sec:case-study}
 
-Patient is a 31 years old female, without any history of chronic ailment, who suffered an acute brainstem stroke after giving birth.  The stroke was on posterior fossa subarachnoid due to a brain artereovenous malformation (AVM), which could be linked to pregnancy or puerperium~\cite{Porras.etal2017}.  Patient was in coma for around 2 months, and after that unable to walk, move, talk or swallow.  After two years of intensive rehabilitation, Patient managed to recover significantly, including from dysphagia, which was very important in order to remove the feeding tube allowing her to start speech recovering.  
+Patient is a 31 years old female, without any history of chronic ailment, who suffered an acute brainstem stroke after giving birth.  The stroke was on posterior fossa subarachnoid due to a brain artereovenous malformation (AVM), which could be linked to pregnancy or puerperium~\cite{Porras.etal2017}.  Patient was in coma for around 2 months, and after that unable to walk, move, talk or swallow.  After two years of intensive rehabilitation, the patient managed to recover significantly, including from dysphagia, which was very important in order to remove the feeding tube allowing her to start speech recovering.  
 
-After 24 months since event, the patient, was discharged from hospital and maintained a 3 times per week rehabilitation treatment, focusing on a remaining affection related to dynamic balance problems while walking.  The patient achieved satisfactory index scores in static balance tests and is able to perform static hip-balance and ankle-balance.  She has recovered muscle in her legs and can perform lower-limb exercises.  Her vision is normal.   
+After 24 months since event, the patient, was discharged from hospital and maintained a 3 times per week rehabilitation treatment, focusing on a remaining affection related to dynamic balance problems while walking.  The patient achieved satisfactory index scores in static balance tests and is able to perform static hip-balance and ankle-balance.  She has recovered muscle force in her legs and can perform lower-limb exercises.  Her vision is normal.   
 
 However, when the patient tries to walk on open-spaces, or with confronting lights (like walking towards sunlight), with other people moving around, or when concentration fades while walking, she is unable to keep up with the pace of the gait and the risk of fall increases.  Nowadays, the patient walks freely unaided at home but requires a Canadian cane otherwise.
 
@@ -216,7 +216,7 @@ When do you use the cane ?  & Only when I am out of home.\\
 \hline
 \end{tabular}
 \vspace{2pt}
-\caption{Survey and responses provided by the patient and family.}
+\caption{Survey and responses provided by the patient.}
 \label{tab:patientsurvey}
 \end{center}
 \end{table*}
@@ -230,9 +230,7 @@ When do you use the cane ?  & Only when I am out of home.\\
 \hline
 Describe the situation when the patient loss her balance & Loss of balance is manifested at the beginning, during the gait cycle or with sudden stops. Walking is performed using intense visual compensation.   Instability increase when the patient is distracted, when she stops looking at the floor, or when she looks sideways.  Her gait is not automated, and demands cognitive resources. \\
 \hline
-Is there any significant muscle loss in lower-limbs ? & No\\
-\hline
-Does she presents any of the following dysmetria / heavy shaking / somatosensorial alterations / proprioceptive alterations ? & No \\
+Does she presents any of the following muscular dystrophy in lower-limbs / dysmetria / heavy shaking / somatosensorial alterations / proprioceptive alterations ? & No \\
 \hline
 Does she have any visible reaction before falling?  & She presents dynamic alterations in hip and ankle compensation.\\
 \hline
@@ -250,7 +248,7 @@ Describe current treatment. & The patient is currently working on rehabilitation
 \end{table*}
 
 We perform a series of surveys and interviews with the patient and their caregivers.  Main results are summarized in 
-Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on the clinical history, results from surveys and interviews, we postulate three different potential clinical situations that could use the external biofeedback signal and could potentially aid in rehabilitation procedures.  The first (i) is a potential problem in the integration of vestibular information while walking, the second (ii) is bradykinesia where the required processing speed to effectively adjust the lower limb to keep the center of mass inside the base support is not achieved.  Finally, the third (iii) hypothesis is an ataxic gait, where non-automated gait produces an increase in the likelihood of failing.
+Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on these results and patient's clinical history, we postulate three different potential clinical situations that could use the external biofeedback signal eventually aiding in rehabilitation procedures.  The first (i) is a potential problem in the integration of vestibular information while walking, the second (ii) is bradykinesia where the required processing speed to effectively adjust the lower limb to keep the center of mass inside the base support is not achieved.  Finally, the third (iii) hypothesis is an ataxic gait, where non-automated gait produces an increase in the likelihood of failing.
 
 %Bradykinesia: due to the slow speech.
 %Unusual gait
@@ -271,7 +269,7 @@ The vest system prototype is based on Internet of Robot Thing (IoRT) technology~
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{equilivest.png}
-\caption{Front and back view of the Equilivest prototype.  The vest is based on a safety vest, with additional velcro pockets.  The battery is located on the back, while the vibrotactile motor is located on the belly~\cite{Brandebusemeyer.etal2021}.  The IMU sensor is pressed against the chest by the use of a flexible elastic band. }
+\caption{Front and back views of the Equilivest prototype.  The vest is based on a safety vest, with additional velcro pockets.  The battery is located on the back, while the vibrotactile motor is located on the belly~\cite{Brandebusemeyer.etal2021}.  The IMU sensor is pressed against the chest by the use of a flexible elastic band. }
 \label{fig:smart-vest}
 \end{figure}
 
@@ -314,12 +312,12 @@ This experiment involves the coupling of the other two.  Five participants are i
 
 \section*{Results and Discussion}
 
-Preliminary results show that for the (1) experiment (Figure \ref{fig:vestibular}), the pitch,roll, yaw angles can be used to determine a breakpoint where the fall is inevitable (black vertical line, marked as 1).   Results from experiment number (2) in Figure \ref{fig:gait} show that the gait cycle are clearly visible from raw acceleration data.
+Preliminary results show that for the (1) experiment, on Figure \ref{fig:vestibular}), the value of pitch angles can be used to determine a breakpoint where the fall is inevitable (black vertical line, marked as 1*).   Results from experiment number (2) in Figure \ref{fig:gait} show that the gait cycle is clearly visible from raw acceleration data.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{vestibular.png}
-\caption{Pitch value in degrees showing the progressive increase as participants leaned forward crossing the instability condition (1).  Time is in milliseconds. }
+\caption{Pitch value in degrees and angular acceleration around X axis showing the progressive increase as participants leaned forward crossing the instability condition (1).  Time is in milliseconds. }
 \label{fig:vestibular}
 \end{figure}
 
@@ -327,7 +325,7 @@ Preliminary results show that for the (1) experiment (Figure \ref{fig:vestibular
 \begin{figure}[h!]
 \centering
 \includegraphics[width=8cm]{gait.png}
-\caption{Angular acceleration for the X and Y axis showing 7 steps of the 10MWT assessment.  Time is in milliseconds. }
+\caption{Angular acceleration for the X and Z axis showing 7 steps of the 10MWT assessment.  Time is in milliseconds. }
 \label{fig:gait}
 \end{figure}
 
@@ -339,9 +337,9 @@ Preliminary results show that for the (1) experiment (Figure \ref{fig:vestibular
 %(3) Este caso probablemente sea el que requiera más experimentación sobre Paula en sí misma.  La idea acá es tener los gráficos promediados de GAIT, que son todos cíclicos, de dos de las variables cualquiera del IMU que formen un ciclo, y ver que hay un patrón común que se da más o menos para las personas healthy.  En base a eso, luego la idea es probar si con Paula ese patrón CAMBIA.  A partir de que vemos si cambia hay que ver donde cambia y en ese punto meter el pacemaker.
 
 
-The information provided from all the experiments allow us to implement three different VF strategies:  The first is an \textbf{Artificial Vestibular Feedback}, which provides information as a feedback for vestibular information integration process.  This is implemented as a frequency-increasing VF signal that represents a distance from the breaking condition position where the fall is inevitable.   The purpose is to provide the patient with a continuous sensation that modulates the risk of falling.
+The information provided from all the experiments allow us to implement three different VF strategies:  The first is an \textbf{Artificial Vestibular Feedback}, which provides information as a feedback for vestibular information integration process.  This is implemented as a frequency-increasing VF signal that increases as long as the distance from the breaking condition position where the fall is inevitable decreases.   The purpose is to provide the patient with a continuous sensation that modulates the risk of falling.
 
-The second strategy is the implementation of \textbf{Gait Pacemaker}.  The obtained data from the analysis of the ataxic gait is used to implement a podometer.  It has been showed that gait synchronization with music increase gait performance~\cite{Roerdink.etal2007} and synchronized gait trainer achieved positive results on patient~\cite{Blicher.etal2009}.  Hence, the aim of this stimulation approach is to keep the patient as close as possible to a normal and safe gait.
+The second strategy, independent of the first one, is the implementation of \textbf{Gait Pacemaker}.  The obtained data from the analysis of the ataxic gait is used to implement a podometer.  It has been showed that gait synchronization with music increase gait performance~\cite{Roerdink.etal2007} and synchronized gait trainer achieved positive results on patient~\cite{Blicher.etal2009}.  Hence, the aim of this stimulation approach is to keep the patient as close as possible to a normal and safe gait.
 
 The final stimulation scheme deals with the Bradykinesia condition, and aims to have a \textbf{Risk-Predictor}~\cite{Rahman.etal2022,Ali.etal2022}.  The IMU data  represents a multichannel time series.  Hence, it can be used to predict a risk of falling, ahead of its occurrence, by building a machine-learning predictor based on the analysis of the time-series data.  The rationale is to counter the slowness of the response by predicting the falling situation ahead of its occurrence and providing the VF stimulation to force a change in the risky gait pattern.
 
@@ -350,7 +348,7 @@ The final stimulation scheme deals with the Bradykinesia condition, and aims to 
 %Afterward, the experiment will be repeated with the 5 participants activating the vibrotactile stimulation which will map progressively the inclination angle.  Hence it will provide an extra signal that can give a accurate information in relation to the stability of the upper-trunk in relation to the walking gait.
 
 \section*{Conclusion}
-Overall, this devices allows to implement a testbed that can be iteratively extended to obtain experimental data and to implement biofeedback strategies which could potentially lead to an increase in the effectiveness of different rehabilitation procedures~\cite{Bowman2021}.
+Overall, we aim for \textit{Equilivest} to serve as a testbed that can be iteratively extended to obtain experimental data and to implement biofeedback strategies~\cite{Bowman2021}.
 
 
 %\section*{Acknowledgment}
