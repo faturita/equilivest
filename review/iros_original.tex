@@ -15,10 +15,16 @@
 }
 
 \author{%
-Franco Paviotti$^{1}$,  Esteban Buniak $^{2}$, Rodrigo Ramele $^{3}$, Orestes Freixes$^{4}$ and Juan Miguel Santos$^{5}$% <-this % stops a space
-\thanks{$^{1}$F. Paviotti, $^{2}$E.Buniak and $^{3}$R.Ramele  are with Bioengineering, Instituto Tecnológico de Buenos Aires (ITBA)
+Franco Paviotti$^{1}$, Esteban Buniak$^{2}$, Rodrigo Ramele$^{3}$, Orestes Freixes$^{4}$ and Juan Miguel Santos$^{5}$% <-this % stops a space
+\thanks{$^{1}$F. Paviotti is with Bioengineering, Instituto Tecnológico de Buenos Aires (ITBA)
                     Buenos Aires, Argentina
         {\tt\small fpaviotti@itba.edu.ar}}%
+\thanks{$^{2}$E.Buniak is with Ingeniería en Informática, Instituto Tecnológico de Buenos Aires (ITBA)
+                    Buenos Aires, Argentina
+        {\tt\small ebuniak@itba.edu.ar}}%
+\thanks{$^{3}$R.Ramele is with Ingeniería en Informática, Instituto Tecnológico de Buenos Aires (ITBA)
+                    Buenos Aires, Argentina
+        {\tt\small rramele@itba.edu.ar}}%
 \thanks{$^{4}$O. Freixes is with the CINER Centro Integral de Neurorehabilitación,
                     Buenos Aires, Argentina
         {\tt\small orestesfreixes@gmail.com}}%
@@ -81,9 +87,9 @@ Strong evidence suggests that neuroplasticity can be enhanced by neural rehabili
 
 %This published evidence emphasizes that this biofeedback can indeed enhance the results of rehabilitation procedures.
 
-Therefore, the addition of an independent and new peripheral therapeutic signal, that can be assimilated as an extrasensory input~\cite{Brandebusemeyer.etal2021},  could improve dynamic balance performance on post-stroke patients which may have yet insufficiency to deal properly with the complexities of walking.  Meaningful balance information, in terms of timing and location, can provide this extra signal in any form of stimulation, particularly vibrotactile feedback (VF)~\cite{Islam.etal2022}.  Although the effectiveness of biofeedback on static balance has been studied more extensively in the literature~\cite{DeAngelis.etal2021}, to the best of our knowledge works dealing with dynamic balance problems while walking have been more scarce.
+Therefore, the addition of an independent and new peripheral therapeutic signal, that can be assimilated as an extrasensory input~\cite{Brandebusemeyer.etal2021},  could improve dynamic balance performance on post-stroke patients which may have yet insufficiency to deal properly with the complexities of walking.  Meaningful balance information, in terms of timing and location, can provide this extra signal in any form of stimulation, particularly vibrotactile feedback (VF).  Although the effectiveness of biofeedback on static balance has been studied more extensively in the literature~\cite{DeAngelis.etal2021}, to the best of our knowledge works dealing with dynamic balance problems while walking have been more scarce.
 
-This work presents the development of a device which is grounded on this idea, and aims to help a post-stroke patient with a remaining dynamic balance problem, presenting it as a case study.  The proposed development is implemented as a smart-vest~\cite{Brandebusemeyer.etal2021}, which we will call, \textit{Equilivest}, that address three possible clinical hypothesis of the underlying problem.  We aim to provide motor learning, meaning to generate an assist-as-needed~\cite{Balasubramian.etal2010,Maaref.etal2016} vibrotactile feedback signal which initially promotes voluntary control over movements of the joints~\cite{Islam.etal2022}, but which fades away to encourage automatism~\cite{Srivastava.etal2016,Donato.etal2016}.  The device aims to increase plasticity by producing timing vibrotactile stimulation based on kinematic and dynamics measurements.  
+This work presents the development of a device which is grounded on this idea, and aims to help a post-stroke patient with a remaining dynamic balance problem, presenting it as a case study.  The proposed development is implemented as a smart-vest~\cite{Brandebusemeyer.etal2021}, which we will call, \textit{Equilivest}, that address three possible clinical hypothesis of the underlying problem.  We aim to provide motor learning, meaning to generate a fading compliant assist-as-needed vibrotactile feedback signal which is manifested to the patient as less conscious as possible~\cite{Srivastava.etal2016,Donato.etal2016}.  The device aims to promote plasticity by producing timing vibrotactile stimulation based on kinematic and dynamics measurements.  
 
 %The idea is to exploits these ideas from neurofeedback that we can create "external" sensors by providing some form of vibrotactile stimulation on her belly and link that stimulation to some form of measurements from IMUs (inertial sensors).
 
@@ -99,9 +105,9 @@ This work presents the development of a device which is grounded on this idea, a
 Patient is a 36 years-old female, without any history of chronic ailment, who suffered an acute brainstem stroke after giving birth.  The stroke was on posterior fossa subarachnoid due to a brain artereovenous malformation (AVM), which could be linked to pregnancy or puerperium~\cite{Porras.etal2017}.  Patient was in induced coma for around 1 month, and after that unable to walk, move, talk or swallow.  Throughout a first period of intensive rehabilitation, the patient managed to recover significantly, including from dysphagia.
 %  which was very important in order to remove the feeding tube allowing her to start speech recovering.  
 
-After 7 months since event, the patient was discharged from hospital and maintained a daily rehabilitation treatment, focusing on a remaining affection related to dynamic balance problems while walking.  The patient achieved satisfactory index scores in static balance tests and is able to perform static hip-balance and ankle-balance.  She has recovered muscle force in her legs and can perform lower-limb exercises.  Her vision is normal.
+After 7 months since event, the patient, was discharged from hospital and maintained a daily rehabilitation treatment, focusing on a remaining affection related to dynamic balance problems while walking.  The patient achieved satisfactory index scores in static balance tests and is able to perform static hip-balance and ankle-balance.  She has recovered muscle force in her legs and can perform lower-limb exercises.  Her vision is normal.   
 
-However, when the patient tries to walk on open-spaces, or with confronting lights (like walking towards sunlight), with other people moving around, or when concentration fades while walking, she is unable to keep up with the pace of the gait and the risk of fall increases, in a non-lateralized locomotion (symmetric)~\cite{Welniarz.etal2015}. Nowadays, the patient walks freely unaided at home but requires a Canadian cane otherwise and constant supervision.
+However, when the patient tries to walk on open-spaces, or with confronting lights (like walking towards sunlight), with other people moving around, or when concentration fades while walking, she is unable to keep up with the pace of the gait and the risk of fall increases.  Nowadays, the patient walks freely unaided at home but requires a Canadian cane otherwise and constant supervision.
 
 %\begin{table*}[t]
 %\begin{center}
@@ -237,7 +243,7 @@ Describe current treatment. & The patient is currently working on rehabilitation
 \hline
 \end{tabular}
 \vspace{2pt}
-\caption{Survey and responses provided by patient's rehabilitation caregiver.}
+\caption{Survey and responses provided by his main patient's rehabilitation caregiver.}
 \label{tab:caregiverssurvey}
 \end{center}
 \end{table*}
@@ -259,7 +265,7 @@ Tables ~\ref{tab:patientsurvey} and \ref{tab:caregiverssurvey}.  Based on these 
 \subsection{Robotic Device Vest}
 \label{sec:vest}
 
-The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU provides accelerometer and gyroscope data to get a 3-dimensional angular acceleration vector and a linear acceleration vector. Roll (Z), yaw (Y) and pitch (X) angles, aligned respectively with anatomical planes coronal, horizontal and sagittal are calculated from a set of transforming equations and processed with a complementary filter which relies $0.98$ in gyroscope data and $0.02$ in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 100 Hz. The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest}.  It is based on a safety vest, complemented with Velcro pockets. 
+The vest system prototype is based on Internet of Robot Thing (IoRT) technology~\cite{Simoens.etal2018,Domingo.etal2012}. The controller is an Arduino UNO (Arduino LLC, Italy) board coupled with ESP8266 shield (WeMos, United Kingdom).  The system is powered by a commercial power bank with Li-Po 18650 cells (Ipower, United States). It also contains an Inertial Measurement Unit (IMU) MPU 6050 (OEM ITG/MPU6050) and a FA-12350 DC motor scavenged from old compact discs which provide the vibrotactile feedback.  The IMU provides accelerometer and gyroscope data to get a 3-dimensional angular acceleration vector and a linear acceleration vector. Pitch, Roll and Yaw angles are calculated from a set of transforming equations and processed with a complementary filter which relies $0.98$ in gyroscope data and $0.02$ in accelerometer data~\cite{Fetick.2022}. These values are transmitted by telemetry in real-time as UDP packets for off-board register, processing and further analysis. Data recovered by the device is sampled at 100 Hz. The smart-vest prototype can be seen in Figure~\ref{fig:smart-vest}.  It is based on a safety vest, complemented with Velcro pockets. 
 
 \begin{figure}[h!]
 \centering
@@ -286,13 +292,14 @@ Three experiments are designed in order to assess each one of the potential clin
 
 \subsubsection{Vestibular Information Integration}
 
-This experiment aims to study the falling process. Participants are told to lean forward performing ankle forward until they couldn't maintain balance anymore and let themselves fall into a mattress. This experiment is used to determine a threshold for the data that can help to identify the breakpoint conditions based on the IMU information where each subject falls.
+This experiment aims to study the falling process. Participants are told to lean forward until they couldn't maintain balance anymore and let themselves fall into a mattress. This experiment is used to determine a threshold for the data that can help to identify the breakpoint conditions based on the IMU information where each subject falls.
 
-In order to test it, 5 healthy participants are recruited to perform 10 runs of falling situations  Participants wearing the vest lean forward by adjusting their ankle joint, without performing a one-step forward movement,  at different angles progressively until they can no longer cope with the unbalance situation and fall to the mattress.
+In order to test it, 5 healthy participants are recruited to perform 10 runs of falling situations  Participants wearing the vest  perform a one-step forward walking exercise with the upper-trunk leaned forward at different angles progressively until they can no longer cope with the unbalance situation and fall to the mattress.
 
 \subsubsection{Ataxic Gait}
 
-This experiment has the purpose of analyzing and studying gait's behavior. In order to accomplish this,  5 participants are instructed to execute 10 sessions of walking in a straight line across ten meters, performing Ten-Meter Walking (10MWT) assesment~\cite{Olmos.etal2008}.  We collected and analyzed pitch, roll and yaw values as well as angular acceleration changes registered by the IMU gyroscope. In this study our goal is to be able to process and identify gait abnormalities as well as all steps occurring and any fall that might develop. 
+This experiment has the purpose of analyzing and studying gait's behavior. In order to accomplish this,  5 participants are instructed to perform 10 sessions of walking in a straight line across ten meters, performing Ten-Meter Walking (10MWT) assesment~\cite{Olmos.etal2008}.  We collected and analyzed pitch, roll and yaw values as well as angular acceleration changes registered by the IMU gyroscope. In this study our goal is to be able to process and identify gait abnormalities as well as all steps occurring and any fall that might develop. 
+
 
 
 \subsubsection{Bradykinesia}
@@ -331,7 +338,7 @@ Preliminary results show that for the first (1) experiment, on Figure \ref{fig:v
 %(3) Este caso probablemente sea el que requiera más experimentación sobre Paula en sí misma.  La idea acá es tener los gráficos promediados de GAIT, que son todos cíclicos, de dos de las variables cualquiera del IMU que formen un ciclo, y ver que hay un patrón común que se da más o menos para las personas healthy.  En base a eso, luego la idea es probar si con Paula ese patrón CAMBIA.  A partir de que vemos si cambia hay que ver donde cambia y en ese punto meter el pacemaker.
 
 
-The information provided from all the experiments allow us to implement three different VF strategies:  The first is an \textbf{Artificial Vestibular Feedback}, which provides information as a feedback for vestibular information integration process.  This is implemented as a frequency-increasing VF signal that increases as long as the distance from the breaking condition position where the fall is inevitable, decreases.   The purpose is to provide the patient with a continuous sensation that modulates the risk of falling.
+The information provided from all the experiments allow us to implement three different VF strategies:  The first is an \textbf{Artificial Vestibular Feedback}, which provides information as a feedback for vestibular information integration process.  This is implemented as a frequency-increasing VF signal that increases as long as the distance from the breaking condition position where the fall is inevitable decreases.   The purpose is to provide the patient with a continuous sensation that modulates the risk of falling.
 
 The second strategy, independent of the first one, is the implementation of \textbf{Gait Pacemaker}.  The obtained data from the analysis of the ataxic gait is used to implement a podometer.  It has been showed that gait synchronization with music increase gait performance~\cite{Roerdink.etal2007} and synchronized gait trainer achieved positive results on patient~\cite{Blicher.etal2009}.  Hence, the aim of this stimulation approach is to keep the patient as close as possible to a normal and safe gait.
 
