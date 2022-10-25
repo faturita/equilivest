@@ -1,0 +1,11 @@
+This work presents a device called Equilivest, a smart vest to support post-stroke patients with issues in dynamic 
+balance by generating timing vibrotactile stimulation based on kinematic and dynamics measurements collected with an IMU placed on the torso.
+The Equilivest addresses three possible clinical conditions. It can work as additional vestibular feedback to alert the user about a potential fall 
+denoted by the crossing of a predefined threshold in trunk angle or/and acceleration. It can work as a gait pacemaker by suggesting to the user a 
+normal gait pattern through vibrotactile stimulation. Finally, it can predict the risk of falling through a machine-learning approach on collected data.
+
+- Could you clarify the following concept: “fading compliant assist-as-needed vibrotactile feedback signal which is manifested to the patient as less conscious as possible”?
+- It would be interesting to have more details about the impairment of the patient in your case study, does the impairment affect more one side of the body or is it general?
+- Could you provide a justification for the position of the IMU on the Equilivest? Is it based on literature or is it a practical choice?
+- The experiments in which the subjects are required to perform “falling situations” is not very clear to me, do they perform one step forward not to fall after 
+bending the trunk or they first perform the step and then they bend the trunk? Maybe a video during the presentation could be useful.

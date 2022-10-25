@@ -1,0 +1,119 @@
+\documentclass[journal,onecolumn,12pt]{IEEEtran} 
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{amsthm, amsfonts}	
+\usepackage{cite}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\usepackage{fancybox}
+\usepackage{url,booktabs}
+
+\usepackage{xr}
+
+
+
+\title{Reply to Reviewer's Comments on\\
+``Equilivest: A Robotic Vest to aid in Post-Stroke Dynamic Balance Rehabilitation'}
+\author{}
+
+\begin{document}
+
+\maketitle
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+We appreciate a lot all the comments provided by the Reviewer.   Thanks so much.
+
+In the following, we discuss our responses to pointed out issues.
+
+\vskip+1ex
+\noindent \dotfill
+
+\section*{\fbox{Reviewer Transcript:}}
+
+This work presents a device called Equilivest, a smart vest to support post-stroke patients with issues in dynamic 
+balance by generating timing vibrotactile stimulation based on kinematic and dynamics measurements collected with an IMU placed on the torso.
+The Equilivest addresses three possible clinical conditions. It can work as additional vestibular feedback to alert the user about a potential fall 
+denoted by the crossing of a predefined threshold in trunk angle or/and acceleration. It can work as a gait pacemaker by suggesting to the user a 
+normal gait pattern through vibrotactile stimulation. Finally, it can predict the risk of falling through a machine-learning approach on collected data.
+
+\begin{itemize}
+\item Could you clarify the following concept: “fading compliant assist-as-needed vibrotactile feedback signal which is manifested to the patient as less conscious as possible”?
+\item It would be interesting to have more details about the impairment of the patient in your case study, does the impairment affect more one side of the body or is it general?
+\item Could you provide a justification for the position of the IMU on the Equilivest? Is it based on literature or is it a practical choice?
+\item The experiments in which the subjects are required to perform “falling situations” is not very clear to me, do they perform one step forward not to fall after 
+bending the trunk or they first perform the step and then they bend the trunk? Maybe a video during the presentation could be useful.
+\end{itemize}
+
+
+\section*{\fbox{Reviewer Responses:}}
+
+%\subsection*{\ovalbox{Reviewer 1 General Comments}}
+
+Could you clarify the following concept: “fading compliant assist-as-needed vibrotactile feedback signal which is manifested to the patient as less conscious as possible”?
+
+\vspace{10pt} 
+\begin{quotation}
+{\color{blue}
+
+One of the aspects that was emphasized by the rehabilitation professional was to help with the patient relearning of the required movements to keep the balance or to recover a natural and automated gait movement.  Literature review emphasized two aspects to consider in biofeedback applications.   The first is the idea in rehabilitation robotics of \textbf{assist-as-needed} which is to provide only an external assistance when it is required and allow the natural development of the movement to develop as easily as possible and to have an active participation of the patient in therapy exercises~\cite{Balasubramian.etal2010,Maaref.etal2016}.  
+
+The second concept is the idea of to promote motor learning behaviour meaning to generate a vibrotactile feedback signal that initially promotes voluntary control over movements of the joints~\cite{Islam.etal2022}, but which fades away to encourage automatism~\cite{Srivastava.etal2016,Donato.etal2016}.
+
+We have modified the abstract manuscript to clarify these concepts without using too much more space.  Thank you so much for the inquire.
+
+}
+\end{quotation}
+\vspace{10pt} 
+
+It would be interesting to have more details about the impairment of the patient in your case study, does the impairment affect more one side of the body or is it general?
+
+\vspace{10pt} 
+\begin{quotation}
+{\color{blue}
+The impairment is not lateralized.  It does not affect one side of the patient, nor it is related to problems with one side of the vision field.  The patient can be in standing position without problems.  It can perform ankle-balance and hip-balance.  It can move in their own house unaided.  However, when confronting open spaces, crowded situations or walking towards lightsources, the patients needs to be very concentrated to be able to walk without falling.  When concentration due to fatigue or boredom fades, the patient start to stumble, gait becomes unnatural or forced and the risk of fall increases.  One aspect that the patient mentioned many times is that she can walk more easily along hallways, through narrow spaces with walls alongside.
+
+Space permitted, we added some extra information in section II.A, and clarified the lack of lateralization.
+}
+\end{quotation}
+
+\vspace{10pt} 
+
+Could you provide a justification for the position of the IMU on the Equilivest? Is it based on literature or is it a practical choice?
+
+\vspace{10pt} 
+\begin{quotation}
+{\color{blue}
+For practical choices at this stage of the project, we did our best to align the anatomical planes, coronal, horizontal, and sagittal with IMU's roll (Z), yaw (Y) and pitch (X) planes (Figure 1).  Yet we implemented a calibration procedure previously to each experiment with each subject.
+
+We clarified the anatomical alignment in the manuscript.
+}
+\end{quotation}
+\vspace{10pt} 
+
+
+
+\vspace{10pt} 
+
+The experiments in which the subjects are required to perform “falling situations” is not very clear to me, do they perform one step forward not to fall after 
+bending the trunk or they first perform the step and then they bend the trunk? Maybe a video during the presentation could be useful.
+
+\vspace{10pt} 
+\begin{quotation}
+{\color{blue}
+We appreciate a lot this comment, it was actually wrongfully explained in the extended abstract.  The experiment is a lean forward ankle-movement without any one-step forward.  Hence lower-limb and trunk lean forward until falling is inevitable and subjects fall into a mattress.
+
+We clarified this in the abstract manuscript and we will add a small video in the presentation. Thank you for your suggestion.
+}
+\end{quotation}
+\vspace{10pt} 
+
+
+
+\vskip+1ex
+\noindent \dotfill
+\vskip+1ex
+\bibliographystyle{IEEEtran}
+\bibliography{iros}
+
+\end{document}
